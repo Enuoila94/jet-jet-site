@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17251d">
+  <meta name="description" content="Découvrez JET-JET : collecte de déchets, points de dépôt, suivi, seconde vie des objets et boutique responsable dans une seule application.">
+  <title>JET-JET — Un geste simple, un impact durable</title>
+  <link rel="icon" type="image/png" href="assets/icons/icon-app.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M5 19 19 5M7 5h12v12"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 8-3 9h18c0-1-3-2-3-9ZM10 21h4"/></symbol>
+    <symbol id="i-recycle" viewBox="0 0 24 24"><path d="m9 3 3 1-2 3M12 4h2a3 3 0 0 1 2.6 1.5L19 10m2-1-1 4-4-1M20 13l-2 4a3 3 0 0 1-2.6 1.5H13m1 3-3-3 3-3M11 18.5H7a3 3 0 0 1-2.6-4.5L7 10m-5 1 4-1 1 4"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M4 8h16l-1 13H5L4 8Zm4 1V6a4 4 0 0 1 8 0v3"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20 11.5a8.5 8.5 0 0 1-8.5 8.5 9 9 0 0 1-4-.9L3 20l1-4.4A8.5 8.5 0 1 1 20 11.5Z"/><path d="M8 11.5h7"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5 19 19M19 5 5 19"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20 3c-11 0-17 4-17 11a7 7 0 0 0 7 7c7 0 11-6 10-18ZM4 20c3-5 7-8 13-11"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v11H3V10Z"/><path d="M9 21v-8h6v8"/></symbol>
+    <symbol id="i-list" viewBox="0 0 24 24"><path d="M6 4h12v16H6zM9 8h2m2 0h2M9 12h2m2 0h2M9 16h2m2 0h2"/></symbol>
+    <symbol id="i-check-circle" viewBox="0 0 24 24"><path d="M20 11.5V12a8 8 0 1 1-8-8h1"/><path d="m8 12 3 3 9-9"/></symbol>
+    <symbol id="i-hourglass" viewBox="0 0 24 24"><path d="M7 3h10M7 21h10M8 3v4l4 5-4 5v4m8-18v4l-4 5 4 5v4"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M3 7h11v10H3zM14 10h4l3 3v4h-7z"/><circle cx="7" cy="18" r="1.5"/><circle cx="18" cy="18" r="1.5"/></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24"><path d="m3 5 6-2 6 2 6-2v16l-6 2-6-2-6 2zM9 3v16m6-14v16"/></symbol>
+    <symbol id="i-store" viewBox="0 0 24 24"><path d="M4 10h16v11H4zM3 4h18l-1 6H4L3 4ZM9 21v-7h6v7"/></symbol>
+    <symbol id="i-history" viewBox="0 0 24 24"><path d="M3 11a9 9 0 1 1 2 7M3 16v-5h5M12 7v5l3 2"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+  </svg>
+
+  <header class="site-header" id="top">
+    <nav class="nav wrap" aria-label="Navigation principale">
+      <a class="brand" href="#top" aria-label="JET-JET, retour en haut"><img class="brand-logo" src="assets/icons/icon-app.png" alt="Logo JET-JET"><span>JET<span class="brand-dash">—</span>JET<span class="brand-dot">.</span></span></a>
+      <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-controls="nav-links" aria-expanded="false"><svg><use href="#i-menu"/></svg></button>
+      <div class="nav-links" id="nav-links">
+        <a href="#concept">Le concept</a><a href="#fonctionnalites">Fonctionnalités</a><a href="#comment-ca-marche">Comment ça marche</a><a href="#questions">FAQ</a>
+        <a class="nav-cta" href="#fonctionnalites">Explorer l'app <svg><use href="#i-arrow-up"/></svg></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="wrap hero-grid">
+        <div class="hero-content">
+          <div class="eyebrow light"><span class="eyebrow-line"></span> UNE NOUVELLE FAÇON DE FAIRE LA DIFFÉRENCE</div>
+          <h1 id="hero-title">Moins de déchets.<br><em>Plus de demain<span class="green-period">.</span></em></h1>
+          <p class="hero-intro">Collecter, recycler, donner une seconde vie. Avec JET-JET, chaque geste compte et tout devient plus simple.</p>
+          <div class="hero-actions"><a href="#fonctionnalites" class="button button-lime">Découvrir les fonctionnalités <svg><use href="#i-arrow-up"/></svg></a><a class="text-link" href="#comment-ca-marche">Voir comment ça marche <span>↗</span></a></div>
+          <div class="hero-note"><span class="note-icon"><svg><use href="#i-leaf"/></svg></span><span>Une application pensée pour un quotidien plus responsable.</span></div>
+        </div>
+        <div class="hero-visual" aria-label="Reproduction de l'écran d'accueil JET-JET">
+          <div class="home-shot-grid" aria-label="Aperçu de l'accueil clair JET-JET">
+            <div class="shot-frame"><span class="phone-island" aria-hidden="true"><i></i></span><article class="app-shot app-shot-light" aria-label="Accueil clair, données de démonstration">
+              <div class="shot-top"><div><p>Bonjour 👋</p><strong>Utilisateur JET-JET</strong></div><div class="shot-top-right"><span class="notif-pill"><svg><use href="#i-bell"/></svg><i>1</i></span><span class="profile-placeholder"><svg><use href="#i-user"/></svg></span></div></div>
+              <div class="cta-card"><span class="cta-tag">+ NOUVELLE DEMANDE</span><h4>Planifiez<br>votre collecte</h4><small>En moins de 2 minutes</small><span class="cta-plus">+</span></div>
+              <div class="stats-row"><div><svg><use href="#i-list"/></svg><b>1</b><small>Total</small></div><div><svg><use href="#i-check-circle"/></svg><b>0</b><small>Terminées</small></div><div><svg><use href="#i-hourglass"/></svg><b>0</b><small>Attente</small></div><div><svg><use href="#i-truck"/></svg><b>0</b><small>En cours</small></div></div>
+              <h5>Accès rapide</h5><div class="quick-row"><div><span class="quick-icon map-icon"><svg><use href="#i-map"/></svg></span><b>Carte</b><small>Points proches</small></div><div><span class="quick-icon recycle-icon"><svg><use href="#i-recycle"/></svg></span><b>La Boucle</b><small>Don · Troc · Réemploi</small></div><div><span class="quick-icon store-icon"><svg><use href="#i-store"/></svg></span><b>JetStore</b><small>Boutique</small></div><div><span class="quick-icon history-icon"><svg><use href="#i-history"/></svg></span><b>Historique</b><small>Mes demandes</small></div></div>
+              <div class="recent-row"><strong>Récentes</strong><span>Voir tout →</span></div><div class="shot-bottom"><span class="active"><svg><use href="#i-home"/></svg>Accueil</span><span><svg><use href="#i-recycle"/></svg>La Boucle</span><span class="mid">+</span><span><svg><use href="#i-store"/></svg>JetStore</span><span><svg><use href="#i-user"/></svg>Profil</span></div>
+            </article></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="hero-bottom wrap"><span>01 / UN QUOTIDIEN PLUS VERT</span><a href="#concept" aria-label="Descendre vers le concept">DÉFILER POUR EXPLORER ↓</a></div>
+    </section>
+
+    <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>COLLECTER <b>✳</b> RECYCLER <b>✳</b> RÉUTILISER <b>✳</b> AGIR ENSEMBLE <b>✳</b> COLLECTER <b>✳</b> RECYCLER <b>✳</b> RÉUTILISER <b>✳</b> AGIR ENSEMBLE <b>✳</b></span></div></div>
+
+    <section class="intro section-pad" id="concept" aria-labelledby="concept-title">
+      <div class="wrap intro-grid"><div class="section-kicker"><span class="kicker-dot"></span> LE CONCEPT / 01</div><div><h2 id="concept-title">La planète n'attend pas.<br><span>Et si on commençait ici ?</span></h2><div class="intro-bottom"><p>JET-JET rassemble les outils dont vous avez besoin pour mieux gérer vos déchets au quotidien. Organisez une collecte, trouvez un point de dépôt, suivez vos actions et découvrez de nouvelles façons de consommer.</p><a class="circle-link" href="#fonctionnalites" aria-label="Découvrir les fonctionnalités"><svg><use href="#i-arrow-up"/></svg></a></div></div></div>
+    </section>
+
+    <section class="features section-pad" id="fonctionnalites" aria-labelledby="features-title">
+      <div class="wrap"><div class="section-heading"><div><div class="section-kicker"><span class="kicker-dot"></span> L'APPLICATION / 02</div><h2 id="features-title">Tout ce qu'il faut<br>pour <span>passer à l'action.</span></h2></div><p>Une seule application, plein de façons de faire la différence. Explorez ce que JET-JET vous réserve.</p></div>
+        <div class="feature-grid">
+          <article class="feature-card feature-main"><div class="feature-copy"><span class="feature-number">01 / COLLECTE À DOMICILE</span><span class="feature-icon"><svg><use href="#i-truck"/></svg></span><h3>Vos déchets,<br>notre mission.</h3><p>Choisissez vos déchets, indiquez votre adresse et sélectionnez un créneau. Votre demande de collecte est prête en quelques étapes.</p><a href="#comment-ca-marche" class="feature-link">Comment ça marche <svg><use href="#i-arrow"/></svg></a></div><div class="collection-art" aria-hidden="true"><div class="collection-preview"><div class="preview-top"><span class="preview-back">←</span><strong>Nouvelle collecte</strong><span class="preview-step">01 / 03</span></div><div class="preview-progress"><i></i><i></i><i></i></div><div class="preview-labels"><span>Déchets</span><span>Adresse</span><span>Planning</span></div><div class="preview-content"><span class="preview-icon"><svg><use href="#i-recycle"/></svg></span><strong>Quels déchets ?</strong><small>Sélectionnez les types à collecter</small><div class="waste-chips"><span>♻ Plastique <svg><use href="#i-check-circle"/></svg></span><span>▤ Papier</span><span>◫ Verre</span></div></div><span class="preview-next">Continuer <svg><use href="#i-arrow"/></svg></span></div></div></article>
+          <article class="feature-card feature-map"><span class="feature-number">02 / CARTE INTERACTIVE</span><div class="map-art" aria-hidden="true"><div class="map-street street-one"></div><div class="map-street street-two"></div><div class="map-street street-three"></div><div class="map-street street-four"></div><div class="map-preview-header"><svg><use href="#i-arrow"/></svg><strong>Points de collecte</strong><span>↻</span></div><div class="map-filters"><span class="selected">Tous</span><span>Déchets ménagers</span><span>Déchets recyclables</span></div><span class="map-pin pin-a"><svg><use href="#i-recycle"/></svg></span><span class="map-pin pin-b"><svg><use href="#i-recycle"/></svg></span><span class="map-pin pin-c"><svg><use href="#i-recycle"/></svg></span><div class="map-count"><svg><use href="#i-pin"/></svg><span>5 points</span></div><div class="map-zoom"><span>+</span><span>−</span></div></div><h3>Le bon endroit, tout près.</h3><p>Repérez les points de collecte sur la carte et trouvez où déposer vos déchets.</p></article>
+          <article class="feature-card feature-follow"><span class="feature-number">03 / SUIVI & NOTIFICATIONS</span><div class="follow-art" aria-hidden="true"><div class="mini-toolbar"><strong>Historique</strong><svg><use href="#i-history"/></svg></div><div class="mini-filters"><span class="selected">Tous</span><span>En attente</span><span>Terminées</span></div><div class="follow-row"><span class="follow-icon"><svg><use href="#i-truck"/></svg></span><span><strong>Demande de collecte</strong><small>Suivez son statut dans l'historique</small></span><span class="status-pill">En cours</span></div><div class="follow-row"><span class="follow-icon follow-second"><svg><use href="#i-bell"/></svg></span><span><strong>Notifications</strong><small>Les nouveautés de vos demandes</small></span><span class="unread-dot"></span></div></div><h3>Gardez le fil, simplement.</h3><p>Consultez l'historique de vos demandes, filtrez par statut et recevez vos notifications.</p></article>
+          <article class="feature-card feature-circular"><span class="feature-number">04 / ÉCONOMIE CIRCULAIRE</span><div class="circular-art" aria-hidden="true"><div class="mini-toolbar"><strong>La Boucle</strong><svg><use href="#i-recycle"/></svg></div><small class="mini-subtitle">Faites circuler, pas jeter</small><div class="mini-tabs"><span class="selected">Annonces</span><span>Mes annonces</span></div><div class="mini-filters"><span class="selected">Tout</span><span>Dons</span><span>Troc</span><span>Vente</span></div><div class="circular-listing"><span class="listing-icon"><svg><use href="#i-recycle"/></svg></span><span><strong>Une nouvelle vie pour chaque objet</strong><small>Donner · Échanger · Réparer</small></span><svg><use href="#i-arrow"/></svg></div><span class="mini-action">+ Publier une annonce</span></div><h3>Une seconde vie<br>pour vos objets.</h3><p>Découvrez des articles à réutiliser et partagez les vôtres au sein de la communauté.</p></article>
+          <article class="feature-card feature-store"><span class="feature-number">05 / JETSTORE</span><div class="store-art" aria-hidden="true"><div class="mini-toolbar"><strong>Jet<span>Store</span></strong><span class="store-tools"><svg><use href="#i-search"/></svg><svg><use href="#i-bag"/></svg></span></div><small class="mini-subtitle">Équipement zéro déchet</small><div class="store-banner"><span>♻ ZÉRO DÉCHET</span><strong>Équipez-vous pour un<br>monde plus propre.</strong><svg><use href="#i-recycle"/></svg></div><div class="store-preview-bottom"><span>⭐ En vedette</span><span>Tous les produits →</span></div></div><h3>Consommer autrement.</h3><p>Explorez la boutique, ajoutez vos favoris au panier et retrouvez vos commandes.</p></article>
+          <article class="feature-card feature-community"><span class="feature-number">06 / MESSAGERIE & PROFIL</span><div class="community-art" aria-hidden="true"><div class="mini-toolbar"><strong>Messages</strong><svg><use href="#i-chat"/></svg></div><small class="mini-subtitle">Vos conversations circulaires</small><div class="community-conversation"><span class="conversation-avatar"><svg><use href="#i-user"/></svg></span><span><strong>Échanges autour des annonces</strong><small>Retrouvez vos conversations ici</small></span><svg><use href="#i-arrow"/></svg></div><div class="community-profile"><svg><use href="#i-user"/></svg><span>Votre profil</span><svg><use href="#i-arrow"/></svg></div></div><h3>On avance ensemble.</h3><p>Échangez par message, gérez votre profil et restez connecté à la communauté.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="steps section-pad" id="comment-ca-marche" aria-labelledby="steps-title"><div class="wrap"><div class="section-kicker"><span class="kicker-dot"></span> EN PRATIQUE / 03</div><div class="steps-layout"><div class="steps-heading"><h2 id="steps-title">Changer ses habitudes, <em>pas son emploi du temps.</em></h2><p>Une demande de collecte en trois étapes. Pas de complications, juste l'essentiel.</p><a class="button button-dark" href="#questions">Des questions ? <svg><use href="#i-arrow-up"/></svg></a></div><div class="step-list"><div class="step"><span class="step-index">01</span><div><h3>Choisissez vos déchets</h3><p>Indiquez les types de déchets que vous souhaitez faire collecter.</p></div><span class="step-mark"><svg><use href="#i-recycle"/></svg></span></div><div class="step"><span class="step-index">02</span><div><h3>Précisez le lieu</h3><p>Renseignez votre adresse, avec la géolocalisation si vous le souhaitez.</p></div><span class="step-mark"><svg><use href="#i-pin"/></svg></span></div><div class="step"><span class="step-index">03</span><div><h3>Choisissez votre moment</h3><p>Sélectionnez la date et le créneau horaire qui vous conviennent.</p></div><span class="step-mark"><svg><use href="#i-clock"/></svg></span></div></div></div></div></section>
+
+    <section class="manifesto"><div class="wrap manifesto-inner"><span class="manifesto-asterisk" aria-hidden="true">✳</span><div class="section-kicker">UN PETIT GESTE, UN GRAND MOUVEMENT</div><h2>Une ville plus propre<br>commence <em>avec nous.</em></h2><p>Collecte, réemploi, partage : JET-JET vous accompagne dans chaque geste qui fait avancer les choses.</p><a href="#fonctionnalites" class="button button-lime">Explorer l'application <svg><use href="#i-arrow-up"/></svg></a></div></section>
+
+    <section class="faq section-pad" id="questions" aria-labelledby="faq-title"><div class="wrap faq-layout"><div><div class="section-kicker"><span class="kicker-dot"></span> BON À SAVOIR / 04</div><h2 id="faq-title">Des questions ?<br><span>On vous répond.</span></h2><p>Tout ce qu'il faut savoir pour découvrir l'univers JET-JET.</p></div><div class="faq-list"><details><summary>Qu'est-ce que JET-JET ? <svg><use href="#i-plus"/></svg></summary><p>JET-JET est une application de gestion des déchets qui réunit les demandes de collecte, une carte des points de dépôt, le suivi des demandes, l'économie circulaire et une boutique.</p></details><details><summary>Comment demander une collecte ? <svg><use href="#i-plus"/></svg></summary><p>Dans l'application, choisissez vos types de déchets, indiquez une adresse puis sélectionnez une date et un créneau horaire. Vous pouvez ensuite suivre votre demande dans l'historique.</p></details><details><summary>Peut-on trouver des points de dépôt ? <svg><use href="#i-plus"/></svg></summary><p>Oui. Une carte interactive permet de découvrir les points de collecte et de consulter leurs informations.</p></details><details><summary>Que trouve-t-on dans l'espace circulaire ? <svg><use href="#i-plus"/></svg></summary><p>L'espace circulaire permet de découvrir des articles proposés par la communauté et de publier les vôtres pour leur donner une seconde vie.</p></details></div></div></section>
+  </main>
+
+  <footer class="footer"><div class="wrap"><div class="footer-top"><div><a class="brand footer-brand" href="#top"><img class="brand-logo" src="assets/icons/icon-app.png" alt="Logo JET-JET"><span>JET<span class="brand-dash">—</span>JET<span class="brand-dot">.</span></span></a><p>Des gestes simples.<br>Un avenir qui change.</p></div><div class="footer-links"><div><strong>Découvrir</strong><a href="#concept">Le concept</a><a href="#fonctionnalites">Fonctionnalités</a><a href="#comment-ca-marche">Comment ça marche</a></div><div><strong>En savoir plus</strong><a href="#questions">Questions fréquentes</a><a href="#top">Retour en haut ↑</a></div></div></div><div class="footer-bottom"><span>© <span id="year">2026</span> JET-JET. Tous droits réservés.</span><span>Fait pour un monde plus vert <svg><use href="#i-leaf"/></svg></span></div></div></footer>
+</body>
+</html>
