@@ -249,7 +249,6 @@ h1 em,.steps h2 em,.manifesto h2 em{font-style:normal;color:var(--lime)}
   background:rgba(122,204,31,.16);
 }
 .quick-icon svg{width:13px;height:13px}
-.quick-icon img{width:17px;height:17px;object-fit:contain}
 .quick-row .map-icon{color:#00c8d7;background:#00c8d71f}
 .quick-row .recycle-icon{color:#7acc1f}
 .quick-row .store-icon{color:#ff6bf5;background:#ff6bf51f}
@@ -270,7 +269,6 @@ h1 em,.steps h2 em,.manifesto h2 em{font-style:normal;color:var(--lime)}
 }
 .shot-bottom span:not(.mid){display:flex;flex-direction:column;align-items:center;gap:3px;white-space:nowrap}
 .shot-bottom svg{width:14px;height:14px}
-.shot-bottom .jetcycle-icon{width:14px;height:14px;object-fit:contain}
 .app-shot-light .shot-bottom{border-color:#e5e5e5}
 .shot-bottom .active{color:#7acc1f;font-weight:700}
 .shot-bottom .mid{
@@ -396,7 +394,6 @@ h1 em,.steps h2 em,.manifesto h2 em{font-style:normal;color:var(--lime)}
 }
 .mini-toolbar{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:12px}
 .mini-toolbar svg{width:16px;height:16px;color:#5a9a0f}
-.mini-toolbar .jetcycle-logo{width:20px;height:20px;object-fit:contain}
 .mini-subtitle{display:block;color:#5a9a0f;font-size:8px;margin-top:2px}
 .mini-filters,.mini-tabs{display:flex;gap:6px;white-space:nowrap;margin:12px 0;font-size:8px}
 .mini-filters span{padding:5px 8px;border-radius:15px;background:#f4f6f3;color:#667066}
@@ -421,7 +418,6 @@ h1 em,.steps h2 em,.manifesto h2 em{font-style:normal;color:var(--lime)}
 .circular-listing>svg,.community-conversation>svg,.community-profile>svg:last-child{width:13px;height:13px;color:#5a9a0f;flex:none}
 .listing-icon,.conversation-avatar{width:28px;height:28px;flex:none;display:grid;place-items:center;border-radius:9px;background:#e8f6dc;color:#5a9a0f}
 .listing-icon svg,.conversation-avatar svg{width:16px;height:16px}
-.listing-icon img{width:18px;height:18px;object-fit:contain}
 .mini-action{display:block;width:max-content;max-width:100%;margin:8px 0 0 auto;padding:6px 10px;border-radius:9px;background:#7acc1f;font-size:8px;font-weight:700}
 .feature-circular h3,.feature-store h3,.feature-community h3{margin-top:auto}
 .feature-store .store-art{background:#fff;border-color:#e5e5e5}
