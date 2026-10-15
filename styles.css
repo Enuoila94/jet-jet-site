@@ -508,9 +508,9 @@ details p{font-size:14px;line-height:1.8;color:var(--muted);margin:0 0 22px;max-
 .collectors h2{max-width:600px;margin:24px 0 20px}
 .collectors h2 em{font-style:normal;color:#57994b}
 .collectors-layout>div:first-child>p{max-width:530px;color:var(--muted);line-height:1.8;margin-bottom:28px}
-.collectors-points{display:grid;gap:14px}
-.collectors-points>div{border:1px solid #cfddc9;background:#f7f9f3;padding:22px 24px}
-.collectors-points strong{display:block;font-size:15px;margin-bottom:7px}
+.collectors-points{display:grid;gap:14px;min-width:0}
+.collectors-points>div{display:grid;gap:8px;border:1px solid #cfddc9;background:#f7f9f3;padding:22px 24px;min-width:0}
+.collectors-points strong{display:block;font-size:15px;line-height:1.35}
 .collectors-points span{display:block;color:var(--muted);font-size:13px;line-height:1.6}
 
 .footer{background:var(--deep);color:white;padding:70px 0 0}
