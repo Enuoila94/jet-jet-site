@@ -223,6 +223,21 @@ function translatePage() {
   });
   document.documentElement.lang = 'en';
   document.title = englishCopy[document.title] || 'JET-JET — A simple gesture, lasting impact';
+  const metadata = {
+    description: 'JET-JET connects residents with available collectors for on-demand waste pickup, real-time tracking and circular economy services in Dakar.',
+    keywords: 'JET-JET, on-demand waste pickup Dakar, real-time waste collection, recycling Senegal, JetCycle, circular economy',
+    ogtitle: 'JET-JET — Waste collection and circular economy',
+    ogdescription: 'Request an on-demand pickup, find an available collector and track every step in real time with JET-JET.',
+    twitterdescription: 'On-demand waste pickup connected to an available collector and tracked in real time.',
+  };
+  document.querySelector('meta[name="description"]')?.setAttribute('content', metadata.description);
+  document.querySelector('meta[name="keywords"]')?.setAttribute('content', metadata.keywords);
+  document.querySelector('meta[property="og:title"]')?.setAttribute('content', metadata.ogtitle);
+  document.querySelector('meta[property="og:description"]')?.setAttribute('content', metadata.ogdescription);
+  document.querySelector('meta[name="twitter:title"]')?.setAttribute('content', metadata.ogtitle);
+  document.querySelector('meta[name="twitter:description"]')?.setAttribute('content', metadata.twitterdescription);
+  document.querySelector('meta[property="og:locale"]')?.setAttribute('content', 'en_US');
+  document.querySelector('script[type="application/ld+json"]')?.remove();
   document.querySelector('#language-toggle').textContent = 'FR';
   document.querySelector('#language-toggle').setAttribute('aria-label', 'Passer en français');
 }
