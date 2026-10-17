@@ -79,9 +79,12 @@ const englishCopy = {
   '2. Un collecteur accepte': '2. A collector accepts',
   '3. Vous suivez en direct': '3. You track it live',
   'L’APPLICATION / 03': 'THE APP / 03',
+  "L'APPLICATION / 03": 'THE APP / 03',
   'Tout ce qu’il faut': 'Everything you need',
+  "Tout ce qu'il faut": 'Everything you need',
   'pour': 'to',
   'passer à l’action.': 'take action.',
+  "passer à l'action.": 'take action.',
   'Une seule application, plein de façons de faire la différence. Explorez ce que JET-JET vous réserve.': 'One app, many ways to make a difference. Explore what JET-JET has in store for you.',
   '01 / COLLECTE À DOMICILE': '01 / AT-HOME COLLECTION',
   'Vos déchets,': 'Your waste,',
@@ -176,12 +179,15 @@ const englishCopy = {
   'Suivez jusqu’à la fin': 'Track it to the end',
   'Indiquez les déchets et votre adresse : la demande devient visible par les collecteurs disponibles.': 'Enter your waste types and address: the request becomes visible to available collectors.',
   'Vous êtes notifié dès qu’un collecteur accepte et que la collecte passe en cours.': 'You are notified as soon as a collector accepts and the pickup starts.',
+  "Vous êtes notifié dès qu'un collecteur accepte et que la collecte passe en cours.": 'You are notified as soon as a collector accepts and the pickup starts.',
   'Consultez le statut en temps réel, ou planifiez simplement un créneau qui vous convient.': 'Check the live status, or simply schedule a time slot that works for you.',
+  "Suivez jusqu'à la fin": 'Track it to the end',
   'POUR LES COLLECTEURS / 05': 'FOR COLLECTORS / 05',
   'Transformez vos trajets en': 'Turn your routes into',
   'opportunités.': 'opportunities.',
   'Rejoignez le réseau JET-JET, recevez des demandes proches de vous et contribuez à une ville plus propre. Choisissez entre 10 % de commission par collecte ou un abonnement mensuel de 5 000 F CFA. Les 10 premières collectes sont gratuites, sans commission.': 'Join the JET-JET network, receive nearby requests and help build a cleaner city. Choose between a 10% fee per pickup or a monthly subscription of 5,000 CFA francs. Your first 10 pickups are free, with no commission.',
   'S’inscrire comme collecteur': 'Sign up as a collector',
+  "S'inscrire comme collecteur": 'Sign up as a collector',
   'Demandes à proximité': 'Nearby requests',
   'Choisissez les courses qui vous correspondent.': 'Choose the jobs that suit you.',
   'Deux offres simples': 'Two simple offers',
@@ -194,18 +200,39 @@ const englishCopy = {
   'avec nous.': 'with us.',
   'Collecte, réemploi, partage : JET-JET vous accompagne dans chaque geste qui fait avancer les choses.': 'Collection, reuse, sharing: JET-JET supports every action that moves things forward.',
   'BON À SAVOIR / 06': 'GOOD TO KNOW / 06',
+  'Des questions ?': 'Questions?',
   'On vous répond.': 'We have answers.',
-  'Questions fréquentes': 'Frequently asked questions',
+  "Tout ce qu'il faut savoir pour découvrir l'univers JET-JET.": 'Everything you need to know to discover the JET-JET ecosystem.',
+  "Qu'est-ce que JET-JET ?": 'What is JET-JET?',
+  "JET-JET est une marketplace de collecte : l'application met en relation les habitants qui ont un besoin avec des collecteurs disponibles, puis centralise le suivi de l'intervention. Elle réunit aussi une carte des points de dépôt, l'économie circulaire et une boutique.": 'JET-JET is a collection marketplace: the app connects residents who need a pickup with available collectors, then centralizes service tracking. It also brings together a drop-off map, circular economy features and a store.',
+  "La collecte se fait-elle en temps réel ?": 'Is collection tracked in real time?',
+  "Oui. Vous publiez votre demande, un collecteur disponible peut l'accepter et vous recevez les changements de statut et les notifications au fur et à mesure. Si vous préférez anticiper, vous pouvez aussi choisir une date et un créneau.": 'Yes. You post your request, an available collector can accept it and you receive status changes and notifications as they happen. If you prefer to plan ahead, you can also choose a date and time slot.',
+  "Comment demander une collecte ?": 'How do I request a pickup?',
+  "Dans l'application, choisissez vos types de déchets, indiquez une adresse puis envoyez la demande. Vous pouvez demander une prise en charge dès que possible ou sélectionner une date et un créneau horaire.": 'In the app, choose your waste types, enter an address and submit the request. You can request the earliest possible pickup or select a date and time slot.',
+  "Quels moyens de paiement sont acceptés ?": 'Which payment methods are accepted?',
+  "Les moyens de paiement disponibles seront indiqués dans l'application avant la validation de la demande. JET-JET affichera toujours le récapitulatif avant confirmation.": 'Available payment methods will be shown in the app before you submit the request. JET-JET always displays a summary before confirmation.',
+  "Que trouve-t-on dans l'espace circulaire ?": 'What is in the circular space?',
+  "L'espace circulaire permet de découvrir des articles proposés par la communauté et de publier les vôtres pour leur donner une seconde vie.": 'The circular space lets you discover items shared by the community and post your own to give them a second life.',
+  'Des gestes simples.': 'Simple actions.',
+  'Un avenir qui change.': 'A future that changes.',
+  'Découvrir': 'Discover',
+  'En savoir plus': 'Learn more',
   'Retour en haut ↑': 'Back to top ↑',
+  'Questions fréquentes': 'Frequently asked questions',
   'Contact': 'Contact',
   'Réseaux sociaux': 'Social media',
+  'JET-JET. Tous droits réservés.': 'JET-JET. All rights reserved.',
   'Tous droits réservés.': 'All rights reserved.',
   'Fait pour un monde plus vert': 'Made for a greener world'
 };
 
 function replaceCopy(value) {
   const trimmed = value.trim();
-  const translated = englishCopy[trimmed];
+  const normalized = trimmed.replaceAll('’', "'");
+  const matchingKey = Object.keys(englishCopy).find(
+    (key) => key.replaceAll('’', "'") === normalized,
+  );
+  const translated = matchingKey ? englishCopy[matchingKey] : undefined;
   if (!translated) return value;
   return value.replace(trimmed, translated);
 }
