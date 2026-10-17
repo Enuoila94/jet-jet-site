@@ -67,6 +67,17 @@ h1,h2,h3,h4,h5{font-family:Manrope,sans-serif}
   align-items:center;
   gap:13px;
 }
+.language-toggle{
+  border:1px solid var(--line);
+  border-radius:100px;
+  padding:9px 12px;
+  background:transparent;
+  color:var(--ink);
+  cursor:pointer;
+  font:700 12px 'DM Sans',sans-serif;
+  letter-spacing:.5px;
+}
+.language-toggle:hover{border-color:var(--ink);background:var(--ink);color:white}
 .nav-cta:hover{background:var(--ink);color:white}
 .menu-toggle{display:none;background:none;border:0;cursor:pointer}
 
