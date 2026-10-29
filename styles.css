@@ -79,6 +79,34 @@ h1,h2,h3,h4,h5{font-family:Manrope,sans-serif}
 }
 .language-toggle:hover{border-color:var(--ink);background:var(--ink);color:white}
 .nav-cta:hover{background:var(--ink);color:white}
+.store-buttons{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.store-buttons-center{justify-content:center}
+.store-buttons-nav{gap:8px;flex-wrap:nowrap}
+.store-btn{
+  display:inline-flex;align-items:center;gap:10px;
+  background:#0c0f0c;color:#fff;border:1px solid #ffffff2e;
+  border-radius:12px;padding:8px 14px;line-height:1.15;
+  transition:.2s transform,.2s background;
+}
+.store-btn:hover{transform:translateY(-2px);background:#1b211b}
+.store-btn svg{width:22px;height:22px;fill:currentColor;flex-shrink:0}
+.store-btn small{display:block;font-size:9px;font-weight:600;letter-spacing:.4px;text-transform:uppercase;opacity:.75}
+.store-btn strong{display:block;font-size:15px;font-weight:800;letter-spacing:-.2px;white-space:nowrap}
+.store-buttons-nav .store-btn{padding:6px 10px;border-radius:10px;border-color:var(--line)}
+.store-buttons-nav .store-btn svg{width:17px;height:17px}
+.store-buttons-nav .store-btn strong{font-size:12px}
+.store-buttons-nav .store-btn small{font-size:7.5px}
+.store-toast{
+  position:fixed;left:50%;bottom:26px;z-index:999;
+  transform:translate(-50%,80px);
+  background:var(--ink,#14231a);color:#fff;
+  border:1px solid #ffffff2e;border-radius:100px;
+  padding:13px 22px;font-size:13.5px;font-weight:700;
+  box-shadow:0 14px 36px #00000040;opacity:0;pointer-events:none;
+  transition:transform .35s ease,opacity .35s ease;white-space:nowrap;
+}
+.store-toast.show{transform:translate(-50%,0);opacity:1}
+@media (max-width:640px){.store-toast{white-space:normal;text-align:center;max-width:88vw}}
 .menu-toggle{display:none;background:none;border:0;cursor:pointer}
 
 .hero{

@@ -19,6 +19,23 @@ navLinks.addEventListener('click', (event) => {
 
 document.querySelector('#year').textContent = new Date().getFullYear();
 
+// Store buttons: flip to true (and set the real App Store URL in
+// index.html) once the apps are published.
+const STORES_LIVE = false;
+const storeToast = document.querySelector('#store-toast');
+let storeToastTimer;
+document.querySelectorAll('[data-store-link]').forEach((link) => {
+  link.addEventListener('click', (event) => {
+    if (STORES_LIVE) return;
+    event.preventDefault();
+    storeToast.classList.add('show');
+    window.clearTimeout(storeToastTimer);
+    storeToastTimer = window.setTimeout(() => {
+      storeToast.classList.remove('show');
+    }, 3200);
+  });
+});
+
 const englishCopy = {
   'JET-JET — Un geste simple, un impact durable': 'JET-JET — A simple gesture, lasting impact',
   'Navigation principale': 'Main navigation',
@@ -33,7 +50,11 @@ const englishCopy = {
   'Fonctionnalités': 'Features',
   'Comment ça marche': 'How it works',
   'FAQ': 'FAQ',
-  "Rejoindre la liste d'attente": 'Join the waiting list',
+  'Disponible sur': 'Get it on',
+  'Télécharger sur': 'Download on the',
+  'JET-JET arrive très bientôt sur les stores !': 'JET-JET is coming very soon to the stores!',
+  'Télécharger JET-JET sur Google Play': 'Download JET-JET on Google Play',
+  "Télécharger JET-JET sur l'App Store": 'Download JET-JET on the App Store',
   'UNE NOUVELLE FAÇON DE FAIRE LA DIFFÉRENCE': 'A NEW WAY TO MAKE A DIFFERENCE',
   'Moins de déchets.': 'Less waste.',
   'Plus de demain': 'More tomorrow',
