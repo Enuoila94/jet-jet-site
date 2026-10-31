@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "tech.jetjet.app",
+      "sha256_cert_fingerprints": [
+        "7D:59:C9:A7:CE:33:51:77:EE:23:FD:E2:F5:D8:3C:6C:E0:33:FC:68:E8:4C:5E:1C:4D:BA:FE:0B:35:3E:A1:E0",
+        "4C:C6:DC:52:17:C2:20:61:4E:54:78:7F:37:10:74:69:B9:85:09:01:43:4C:1E:A3:84:D9:5F:02:47:AC:A8:F4"
+      ]
+    }
+  }
+]
